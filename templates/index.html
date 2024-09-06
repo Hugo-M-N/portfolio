@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    My Portfolio!
+{% endblock %}
+
+{% block main %}
+    <h1 class="welcome">Welcome to my portfolio!</h1>
+
+    <section class="index__last">
+        <h2 class="index__lastHeader">Last Projects</h2>
+        <!-- Implementar lógica para listar los ultimos 3 projectos -->
+         <a href="/projects">See more</a>
+    </section>
+    <section class="index__about">
+        <h2 class="index__aboutHeader">How did I get here?</h2>
+        <a href="/about">Know more!</a>
+    </section>
+    <section class="index_contact">
+        <h2 class="index__contactHeader">Liked what you see?</h2>
+        <a href="/contact">Contact!</a>
+    </section>
+{% endblock %}
