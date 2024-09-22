@@ -1,23 +1,44 @@
 {% extends "layout.html" %}
 
 {% block title %}
-    My Portfolio!
+My Portfolio!
 {% endblock %}
 
 {% block main %}
+<div class="logo">
+    <div class="logo_l1"></div>
+    <div class="logo_l2"></div>
+    <div class="logo_l3"></div>
+    <div class="logo_l4"></div>
+    <div class="logo_l5"></div>
+    <div class="logo_l6"></div>
+    <div class="logo_l7"></div>
+    <div class="logo_l8"></div>
+    <div class="logo_l9"></div>
+    <div class="logo_l10"></div>
+    <div class="logo_l11"></div>
+    <div class="logo_l12"></div>
+</div>
+
+<div class="index">
     <h1 class="welcome">Welcome to my portfolio!</h1>
+    <p class="welcome--text">This project it's meant to be just a display to show the rest of my projects.</p>
 
     <section class="index__last">
         <h2 class="index__lastHeader">Last Projects</h2>
         <!-- Implementar lógica para listar los ultimos 3 projectos -->
-         <a href="/projects">See more</a>
+         {% for project in projects %}
+            
+         {% endfor %}
+        <a class="last__button" href="https://github.com/Hugo-M-N?tab=repositories">See more</a>
     </section>
     <section class="index__about">
         <h2 class="index__aboutHeader">How did I get here?</h2>
-        <a href="/about">Know more!</a>
+        <a class="about__button" href="/about">Know more!</a>
     </section>
     <section class="index_contact">
         <h2 class="index__contactHeader">Liked what you see?</h2>
-        <a href="/contact">Contact!</a>
+        <a class="contact__button" href="/contact">Contact!</a>
     </section>
+</div>
 {% endblock %}

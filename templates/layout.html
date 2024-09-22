@@ -8,21 +8,21 @@
 
     <title>{% block title %}{% endblock %}</title>
 </head>
-<body>
-    <header>
+<body class="layout">
+    <header class="layout__header">
         <h1><a href="/">My Portfolio!</a></h1>
         <nav>
             <ul>
-                <li><a href="/projects">Projects</a></li>
+                <li><a href="https://github.com/Hugo-M-N?tab=repositories">Projects</a></li>
                 <li><a href="/About">About Me</a></li>
                 <li><a href="/Contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="layout__main">
         {% block main %}{% endblock %}
     </main>
-    <footer>
+    <footer class="layout__footer">
         <p>Developed by Hugo Martín Nacarino - 2024</p>
     </footer>
 </body>

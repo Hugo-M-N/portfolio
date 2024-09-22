@@ -1,0 +1,251 @@
+/* Variables */
+:root {
+    /* Colors */
+    --yellow: #F9ED69;
+    --orange: #F08A5D;
+    --marron: #B83B5E;
+    --purple: #6A2C70;
+
+
+    --black: #000000;
+    --darkGrey: #444444;
+    --grey: #888888;
+    --lightGrey: #CCCCCC;
+    --white: #FFFFFF;
+
+    /* Fonts */
+    --primaryFont: fantasy;
+    --secondaryFont: system-ui;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: var(--primaryFont);
+}
+
+body {
+    height: 100vh;
+    overflow: scroll;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Layout */
+
+.layout {
+    margin: 0;
+    background-color: var(--purple);
+}
+
+.layout__header {
+    background-color: var(--yellow);
+    text-align: center;
+}
+
+.layout__header h1 {
+    margin: 0;
+}
+
+.layout__header h1 a {
+    font-size: 7rem;
+    text-decoration: none;
+    color: var(--orange);
+    -webkit-text-stroke: 0.15rem var(--marron);
+}
+
+.layout__header nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.layout__header nav ul li a {
+    font-size: 3.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--orange);
+    -webkit-text-stroke: 0.2rem var(--marron);
+    padding: 0.7rem;
+}
+
+.layout__header nav ul li a:hover {
+    background-color: var(--marron);
+    -webkit-text-stroke: 0.2rem var(--purple);
+    color: var(--yellow);
+    border-radius: 0.5rem;
+}
+
+.layout__footer {
+    background-color: var(--yellow);
+    text-align: center;
+    padding: 2rem;
+    font-size: 3rem;
+    color: var(--orange);
+    -webkit-text-stroke: 0.15rem var(--marron);
+}
+
+.layout__main {
+    width: 85%;
+    margin: 1.5rem auto;
+}
+
+.layout__footer p {
+    margin: 0;
+}
+
+/* Desktop version */
+@media screen and (min-width: 950px) {
+
+    .layout__header {
+        display: flex;
+        flex-direction: row;
+        height: 10rem;
+        align-items: center;
+    }
+
+    .layout__header h1 a {
+        font-size: 5rem;
+        margin: 2rem;
+    }
+
+    .layout__header nav {
+        margin: 0 auto;
+    }
+
+    .layout__header nav ul {
+        display: flex;
+        flex-direction: row;
+        gap: 7rem;
+    }
+
+}
+
+/* Index */
+
+.index {
+    background-color: var(--yellow);
+    padding: 1.5rem;
+    border-radius: 2rem;
+    text-align: center;
+}
+
+.logo{
+    width: 53rem;
+    height: 53rem;
+    margin: 4rem auto;
+    border-radius: 50%;
+    background: linear-gradient(var(--purple),var(--marron),var(--orange), var(--yellow)); 
+}
+
+.logo_l1, 
+.logo_l2, 
+.logo_l3, 
+.logo_l4,
+.logo_l5,
+.logo_l6,
+.logo_l7,
+.logo_l8,
+.logo_l9,
+.logo_l10,
+.logo_l11,
+.logo_l12
+{
+    height: 0.2rem;
+    width: 100%;
+    background-color: var(--purple);
+    position: relative;
+    top: 11rem;
+}
+
+.logo_l2{
+    height: 0.4rem;
+    top: 14rem;
+}
+
+.logo_l3{
+    height: 0.6rem;
+    top: 16.9rem;
+}
+
+.logo_l4{
+    height: 0.8rem;
+    top: 19.7rem;
+}
+
+.logo_l5{
+    height: 1rem;
+    top: 22.4rem;
+}
+
+.logo_l6{
+    height: 1.2rem;
+    top: 25rem;
+}
+
+.logo_l7{
+    height: 1.4rem;
+    top: 27.5rem;
+}
+
+.logo_l8{
+    height: 1.6rem;
+    top: 29.9rem;
+}
+
+.logo_l9{
+    height: 1.8rem;
+    top: 32.2rem;
+}
+
+.logo_l10{
+    height: 2rem;
+    top: 34.4rem;
+}
+
+.logo_l11{
+    height: 2.2rem;
+    top: 36.5rem;
+}
+
+.logo_l12{
+    height: 2.4rem;
+    top: 38.5rem;
+}
+
+.welcome, .index__lastHeader, .index__aboutHeader, .index__contactHeader {
+    font-size: 4rem;
+    color: var(--orange);
+    -webkit-text-stroke: 0.1rem var(--marron);
+}
+
+.welcome--text {
+    font-family: var(--secondaryFont);
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--marron);
+    -webkit-text-stroke: 0.1rem var(--black);
+    text-align: center;
+    padding: 2rem;
+}
+
+.last__button, .about__button, .contact__button {
+    text-decoration: none;
+    font-size: 3rem;
+    color: var(--yellow);
+    background-color: var(--marron);
+    -webkit-text-stroke: 0.15rem var(--purple);
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.last__button:hover, .about__button:hover, .contact__button:hover {
+    border: 0.3rem solid var(--marron);
+    background-color: var(--purple);
+    color: var(--orange);
+    -webkit-text-stroke: 0.2rem var(--marron);
+}
